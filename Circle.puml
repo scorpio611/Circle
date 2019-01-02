@@ -1,0 +1,32 @@
+@startuml
+
+Circle <|- Cylinder
+
+class Circle {
+-String color
+-double radius
+
++Circle()
++Circle(double radius)
++Circle(double radius, String color)
++getRadius():double
++setRadius(double radius):void
++getColor():String
++setColor(String color):void
++getArea():double
++**toString():String**
+}
+
+class Cylinder{
+-double height
+
++Rectangle()
++Rectangle(double height)
++Rectangle(double height, double radius, String color)
++getHeight():double
++setHeight(double height):void
++getVolumetric():double
++**toString():String**
+}
+
+@enduml
